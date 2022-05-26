@@ -1,6 +1,8 @@
 import express from 'express';
 import { db } from './database/firebase.js'
 import cors from 'cors'
+import { config } from 'dotenv'
+config()
 
 const port = 3000;
 
