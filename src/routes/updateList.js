@@ -8,7 +8,7 @@ updateListRouter.post('/updateList', async (req, res) => {
     const listRef = await db.collection('lists').doc('/' + req.body.id + '/')
     const list = await listRef.get()
     if(list.exists) {
-        res.status(204).send(await createOrUpdateListWithId(req))
+        res.status(204).send(await createOrUpdateListWithId(req.body.id, req.body.items))
     }
     res.status(404)
 })
