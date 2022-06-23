@@ -18,5 +18,8 @@
     "dotenv": "^16.0.1",
     "express": "^4.17.1",
     "firebase-admin": "^9.7.0"
+  },
+  "engine": {
+    "node": "16.x"
   }
 }
