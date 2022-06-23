@@ -1,10 +1,8 @@
 import express from 'express';
 import cors from 'cors'
-import { config } from 'dotenv'
+
 import { listRouter } from "./routes/list.js";
 import { updateListRouter } from "./routes/updateList.js";
-
-config()
 
 const port = process.env.APP_PORT || 3000;
 const app = express();
