@@ -10,14 +10,13 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "firebase": "^8.4.3"
-  },
+  "devDependencies": {},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.17.1",
-    "firebase-admin": "^9.7.0"
+    "firebase-admin": "^9.7.0",
+    "firebase": "^8.4.3"
   },
   "engine": {
     "node": "16.x"
