@@ -4,7 +4,7 @@ import cors from 'cors'
 import { listRouter } from "./routes/list.js";
 import { updateListRouter } from "./routes/updateList.js";
 
-const port = process.env.APP_PORT || 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors());
