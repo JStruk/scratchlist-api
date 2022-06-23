@@ -6,7 +6,7 @@ import { updateListRouter } from "./routes/updateList.js";
 
 config()
 
-const port = 3000;
+const port = process.env.APP_PORT || 3000;
 const app = express();
 
 app.use(cors());
@@ -16,5 +16,5 @@ app.use(listRouter);
 app.use(updateListRouter)
 
 app.listen(port, () => {
-    console.log(`api listening at http://localhost:${ port }`)
+    console.log(`api listening at http://localhost:${port}`)
 })
